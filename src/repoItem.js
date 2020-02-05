@@ -1,15 +1,25 @@
 import React from 'react';
 import './repoItem.css';
  import PropTypes from "prop-types";
-const RepoItem = (props) => {
+ import moment from "moment";
+const RepoItem = ({repo}) => {
+
+let createdAt = moment(repo.created_at);
+let diff = moment().diff(createdAt); 
+let duration = parseInt(moment.duration(diff).asDays());
+
+
+
+    
     return (
     <div className="repoItem">
-    <div className="avatar"><img alt='' src={props.repo.owner.avatar_url}></img></div>
-    <div className="infos"><h3>{props.repo.name}</h3>
-           <p>{(props.repo.description===null)?"No description provided":props.repo.description}</p>
-           <p><span className="issues">issues :{props.repo.open_issues_count} </span>
-           <span className="stars">stars:{props.repo.stargazers_count}</span>
-           <span>{props.repo.created_at} by {props.repo.owner.login}</span></p>
+    <div className="avatar"><img alt='' src={repo.owner.avatar_url}></img></div>
+    <div className="infos"><h2>{repo.name}</h2>
+           <p>{(repo.description===null)?"No description provided":repo.description}</p>
+           <p>
+           <span className="stars">stars:{repo.stargazers_count}</span>
+           <span className="issues">issues :{repo.open_issues_count} </span>
+<span className="date">Submitted {duration} days ago by <b>{repo.owner.login}</b></span></p>
 </div>
         </div>
     );

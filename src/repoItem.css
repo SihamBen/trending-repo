@@ -3,7 +3,7 @@
   display: flex;
   border-radius: 5px;
   padding: 10px;
-  margin-bottom:10px ;
+  margin:20px ;
   justify-content: space-between;
 }
 .avatar {
@@ -19,14 +19,15 @@
  border-radius: 3px;
 
 }
-h3 {
+h2 {
 color:rgb(79, 79, 80);
 }
  p{
     color:gray;
 }
-.issues{background: #ff4f4f;}
-.stars{background:rgb(67, 173, 223);}
+
+.issues{background: #fc1e1e;}
+.stars{background:rgb(255, 231, 18);}
 .issues , .stars {
     color: white;
     font-size: 12px;
@@ -35,7 +36,7 @@ color:rgb(79, 79, 80);
     position: relative ;
     
     float: left;
-    padding: 8px 5px;
+    padding: 7px 5px;
     margin: 0 5px 5px 0;
     
 }
@@ -45,4 +46,10 @@ color:rgb(79, 79, 80);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width:700px)
+{
+  .issues,.stars,.date{
+    display: block;
+  }
 }
