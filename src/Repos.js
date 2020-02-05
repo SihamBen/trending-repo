@@ -3,7 +3,8 @@ import RepoItem from './RepoItem';
 import PropTypes from "prop-types";
 const Repos = (props) => {
     return (
-        <div>
+        <div style={{marginLeft:"25%",marginRight:"25%"}}>
+            <h1 style={{textAlign:"center",color:"rgb(79, 79, 80)"}}>Trending repo on GitHub</h1>
             {props.reposList.map(repo=>
             (<RepoItem repo={repo} key={repo.id}></RepoItem>)
                 )}

@@ -1,0 +1,49 @@
+.repoItem {
+  box-shadow: 0 0 20px #a6b7c5;
+  display: flex;
+  border-radius: 5px;
+padding: 10px;
+  margin-bottom:10px ;
+  justify-content: space-between;
+}
+.avatar {
+  
+  flex-basis: 20%;
+  align-self: center;
+  
+  
+}
+.avatar > img {
+ max-width: 100%;
+ max-height: 100%;
+ object-fit: fill;
+ border-radius: 3px;
+
+}
+h3 {
+color:rgb(79, 79, 80);
+}
+ p{
+    color:gray;
+}
+.issues{background: #ff4f4f;}
+.stars{background:rgb(67, 173, 223);}
+.issues , .stars {
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    position: relative ;
+    
+    float: left;
+    padding: 8px 5px;
+    margin: 0 5px 5px 0;
+    
+}
+.infos {
+  flex: 2;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
