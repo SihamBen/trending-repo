@@ -1,4 +1,4 @@
-##Trending Repositories on GitHub
+## Trending Repositories on GitHub
 This is my version of the front-end coding challenge .
 I worked with React.Js because Im already familiar with it .
 In addition to React , I used moment.js to handle time and infinite-scroll-component.
