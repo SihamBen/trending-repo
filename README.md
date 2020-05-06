@@ -1,8 +1,5 @@
 ## Trending Repositories on GitHub
-This is my version of the front-end coding challenge .
-I worked with React.Js because Im already familiar with it .
-In addition to React , I used moment.js to handle time and infinite-scroll-component.
-For styling, I only used css .
+List most Trending Github Repos using React.js and Github API
 
 You can use :
 ### `npm start`
